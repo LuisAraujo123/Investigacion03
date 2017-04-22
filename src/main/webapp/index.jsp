@@ -11,10 +11,10 @@
     </head>
     <% request.setAttribute( "test", new EquipoCtrl().ver()); %>
     
-    <display:table name="test" id="test">
-            <display:column property="codiEqui" title="ID" />
-            <display:column property="nombEqui" title="Nombre equipo" />
-            <display:column property="descEqui" title="Descripcion" />
+    <display:table name="test" id="test" pagesize="5">
+            <display:column property="codiEqui" title="ID" sortable="true" sortName="codiEqui"/>
+            <display:column property="nombEqui" title="Nombre equipo" sortable="true" sortName="nombEqui"/>
+            <display:column property="descEqui" title="Descripcion" sortable="true" sortName="descEqui"/>
     </display:table>
     
 </html>
