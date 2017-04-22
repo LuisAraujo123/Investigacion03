@@ -1,3 +1,4 @@
+<%@page import="com.sv.udb.controlador.EquipoCtrl"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://displaytag.sf.net" prefix="display" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -8,14 +9,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-<display:table name="invoices" id="invoice">
-	<display:column property="id" title="ID" />
-	<display:column property="clientName" title="Nombre del cliente" />
-	<display:column property="amount" title="Monto" />
-	<display:column property="date" title="Fecha" />
-</display:table>
-
-
-    </body>
+    <% request.setAttribute( "test", new EquipoCtrl().ver()); %>
+    
+    <display:table name="test" id="test">
+            <display:column property="codiEqui" title="ID" />
+            <display:column property="nombEqui" title="Nombre equipo" />
+            <display:column property="descEqui" title="Descripcion" />
+    </display:table>
+    
 </html>

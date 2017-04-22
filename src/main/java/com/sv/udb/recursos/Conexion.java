@@ -44,7 +44,7 @@ public class Conexion {
                 pro.load(file);
                 this.url = pro.getProperty("url");
                 this.user = pro.getProperty("user");
-                this.pass = pro.getProperty("password");
+                this.pass = pro.getProperty("pass");
                 return true;
             }
         }

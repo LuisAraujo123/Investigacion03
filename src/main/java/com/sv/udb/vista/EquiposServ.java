@@ -33,9 +33,9 @@ public class EquiposServ extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+       
        boolean esValido = request.getMethod().equals("POST");
        String mens="";
-       
        if(!esValido)
        {
             response.sendRedirect(request.getContextPath()+"/index.jsp");
@@ -112,6 +112,7 @@ public class EquiposServ extends HttpServlet {
            }
                 request.setAttribute("mensAlert", mens);
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
+                
        }
       
     }

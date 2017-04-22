@@ -10,11 +10,11 @@ package com.sv.udb.modelo;
  * @author Luis
  */
 public class Equipos {
-    private int CodiEqui;
+    private int codiEqui;
     private String nombEqui;
     private String descEqui;
-public Equipos(int CodiEqui, String nombEqui, String descEqui) {
-        this.CodiEqui = CodiEqui;
+public Equipos(int codiEqui, String nombEqui, String descEqui) {
+        this.codiEqui = codiEqui;
         this.nombEqui = nombEqui;
         this.descEqui = descEqui;
     }
@@ -22,11 +22,11 @@ public Equipos(int CodiEqui, String nombEqui, String descEqui) {
     public Equipos() {
     }
     public int getCodiEqui() {
-        return CodiEqui;
+        return codiEqui;
     }
 
     public void setCodiEqui(int CodiEqui) {
-        this.CodiEqui = CodiEqui;
+        this.codiEqui = CodiEqui;
     }
 
     public String getNombEqui() {
